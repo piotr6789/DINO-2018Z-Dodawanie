@@ -33,10 +33,17 @@ public class DodawanieTest {
     }
 
     @Test
-    public void test5(){
+    public void test5(){      
         int a = 10001;
         int b = 11111;
         org.junit.Assert.assertEquals("You're not a wizard Harry!", DodawanieLib.dodaj(Integer.toString(a),Integer.toString(b)));
-    }
 
+    }
+   @Test
+    public void test6(){ 
+        int a = 98765;
+        int b = 0;
+        org.junit.Assert.assertEquals(Integer.toString(a+b), DodawanieLib.dodaj(Integer.toString(a),Integer.toString(b)));
+    }
 }
+

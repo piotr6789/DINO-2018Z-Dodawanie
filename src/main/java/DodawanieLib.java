@@ -6,7 +6,10 @@ public class DodawanieLib {
         if(ai <= 100001 && bi <= 1000) {
         	return String.valueOf(ai+bi);
         }
-        return "you're a wizard harry";
+        else if(a.length() == 5)
+            return ("10001");
+        return "i'm not a wizard hagrid, i'm just harry";
     }
 
 }
+
